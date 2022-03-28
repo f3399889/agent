@@ -4,12 +4,12 @@
  */
 public class TestTime {
     public static void start(Object[] args) {
-        System.err.println("1");
+        System.err.println("11");
         System.err.println(args);
     }
 
     public static void end(Object[] args) {
-        System.err.println("2");
+        System.err.println("22");
         System.err.println(args);
     }
 
