@@ -1,0 +1,24 @@
+<assembly>
+    <formats>
+        <!-- 开发时关闭压缩打包
+        <format>tar.gz</format>
+        <format>zip</format>
+        -->
+        <format>dir</format> <!-- test -->
+    </formats>
+    <includeBaseDirectory>true</includeBaseDirectory>
+    <dependencySets>
+        <dependencySet>
+            <includes>
+                <include>*:monitor-agent-bootstrap:jar</include>
+            </includes>
+            <outputFileNameMapping>monitor-agent-bootstrap.jar</outputFileNameMapping>
+        </dependencySet>
+        <dependencySet>
+            <excludes>
+                <exclude>*:monitor-agent-bootstrap:jar</exclude>
+            </excludes>
+            <outputDirectory>lib</outputDirectory>
+        </dependencySet>
+    </dependencySets>
+</assembly>
