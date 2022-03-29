@@ -40,7 +40,6 @@ public class MyTransformer implements ClassFileTransformer {
             // 加载start包类加载器
             pool.appendClassPath(new LoaderClassPath(AgentStarter.class.getClassLoader()));
 
-
             //借助JavaAssist工具，进行字节码插桩
             CtClass cc;
             if ("cn/wine/monitor/demo/springboot1/TestPerson".equals(className)) {
